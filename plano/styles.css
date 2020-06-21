@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    font-family: 'Muli', sans-serif;
+    background: #8f57fd;
+    /* background: linear-gradient(#21c08b, #8f57fd); */
+  }
+.plano{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.plano__container{
+    background: url('./images/plano-cartesiano.svg');
+    width: 500px;
+    height: 500px;
+    display:grid;
+    grid-template-columns: repeat(21, 1fr);
+    grid-template-rows: repeat(21, 1fr);
+}
+.plano__container--punto{
+    background: red;
+    grid-column: 20 / 20;
+    
+}

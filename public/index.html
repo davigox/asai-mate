@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+    <!-- Styles -->
+    <link rel="stylesheet" href="./css/index.css">
+    <title>Asai</title>
+</head>
+<body>
+    <header class="header">
+        <img class="header__img" src="./images/robot-blanco.svg" alt="Logo">
+        <div>
+            <p>Estudiante: </p><p id="estudiante">Sin Usuario</p>
+        </div>
+        <div>
+            <button id="button_cerrar" class="button" >Cerrar Sesion</button>
+            <button id="button_volver" class="button hide" >Volver</button>
+        </div>
+    </header>
+
+    <section class="main">
+        <div id="index" class="index__container hide">
+            <div class="index__container--img">
+                <img src="./images/robot-blanco.svg" alt="Logo">
+            </div>
+            <button id="button_iniciar" class="button">Iniciar sesión</button>
+            <button id="button_crear" class="button">Crear cuenta</button>
+        </div>
+
+        <div id="signin" class="signin__container hide">
+            <img class="signin__container--img" src="./images/robot-blanco.svg" alt="Robot">
+            <div class="signin__container--title">
+                <h1>Asai</h1>
+                <P>Plano Cartesiano</P>
+            </div>
+            <form class="signin__container--form">
+                <input id="signinEmail" class="input" type="email" placeholder="correo">
+                <input id="signinPassword" class="input" type="password" placeholder="Contraseña">
+                <button id="signinButton" class="button2" >Iniciar sesión</button>
+            </form>
+        </div>
+
+        <div id="signup" class="signup__container hide">
+            <img class="signup__container--img" src="./images/robot-blanco.svg" alt="Robot">
+            <div class="signup__container--title">
+                <h1>Asai</h1>
+                <P>Plano Cartesiano</P>
+            </div>
+            <form class="signup__container--form">
+                <input id="signupEmail" class="input" type="email" placeholder="Correo">
+                <input id="signupNombres" class="input" type="text" placeholder="Nombres">
+                <input id="signupApellidos" class="input" type="text" placeholder="Apellidos">
+                <input id="signupPassword" class="input" type="password" placeholder="Contraseña">
+                <button id="signupButton" class="button2" >Crear Cuenta</button>
+            </form>
+        </div>
+        <div id="plano" class="plano hide">
+            <div class="plano__container">
+                <div id="punto" class="plano__container--punto animated"></div>
+                <img id="robot" class="plano__container--punto2 animated" src="./images/robot.svg">
+                </img>
+            </div>
+        </div>
+        <div id="pregunta" class="pregunta hide">
+            <div class="pregunta__container">
+                <div class="plano__container--pregunta">
+                    <div class="plano__container--datos">
+                        <h3>Pregunta:</h3>
+                        <h3 id="etiquetaNivel">Nivel: </h3>
+                    </div>
+                    <p>Ayuda al robod Asai a que encuentre la pelota roja.</p>
+                    <p>Mueve al robod Asai en el eje X y el eje Y.</p>
+                </div>
+                <div class="plano__container--respuesta">
+                    <h3>(</h3>
+                    <input id="inputX" class="input2" type="number" value="0">
+                    <h3>,</h3>
+                    <input id="inputY" class="input2" type="number" value="0">
+                    <h3>)</h3>
+                    <button id="btn_siguiente" class="button3 animated">Siguiente</button>
+                    <button id="btn_verificar" class="button3">Verificar</button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <footer class="footer">
+        <p>Consultas a:</p>
+        <a href="/">robodavcuqupe@gmail.com</a>
+    </footer>
+    <!-- colocando sdk firebase -->
+    <script src="https://www.gstatic.com/firebasejs/7.9.1/firebase-app.js"></script>
+    <!-- agregando auth -->
+    <script src="https://www.gstatic.com/firebasejs/7.9.1/firebase-auth.js"></script>
+    <!-- agregando firestore -->
+    <script src="https://www.gstatic.com/firebasejs/7.9.1/firebase-firestore.js"></script>
+
+    <!-- agregando Js propio -->
+    <script src="./auth/Auth.js"></script>
+    <script src="./config/configFirebase.js"></script>
+    <script src="./js/Evaluaciones.js"></script>
+    <script src="./js/juego.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>

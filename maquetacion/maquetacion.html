@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+    <!-- Styles -->
+    <link rel="stylesheet" href="./styles.css">
+    <title>Maquetación</title>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <div class="header__container">
+                <div class="header__container--logo">
+                        <img src="./images/robot-blanco.svg" alt="logo">
+                        <h4>Asai</h4>
+                </div>
+                <h3>Plano Cartesiano</h3>
+                <a>Salir</a>
+            </div>
+        </div>
+    </header>
+<section class="main">
+    <section class="plano">
+        <div class="plano__container">
+            <div id="punto" class="plano__container--punto animated"></div>
+            <img id="robot" class="plano__container--punto2 animated" src="./images/robot.svg">
+            </img>
+        </div>
+    </section>
+    <section class="pregunta">
+        <div class="pregunta__container">
+            <div class="plano__container--pregunta">
+                <div class="plano__container--datos">
+                    <h3>Pregunta:</h3>
+                    <h3 id="etiquetaNivel">Nivel: </h3>
+                </div>
+                <p>Ayuda al robod Asai a que encuentre la pelota roja.</p>
+                <p>Mueve al robod Asai en el eje X y el eje Y.</p>
+            </div>
+            <div class="plano__container--respuesta">
+                <h3>(</h3>
+                <input id="inputX" class="input" type="number" value="0">
+                <h3>,</h3>
+                <input id="inputY" class="input" type="number" value="0">
+                <h3>)</h3>
+                <button id="btn_siguiente" class="button animated">Siguiente</button>
+                <button id="btn_verificar" class="button">Verificar</button>
+            </div>
+        </div>
+    </section>
+</section>
+<footer class="footer">
+    <p>Consultas a:</p>
+    <a href="/">robodavcuqupe@gmail.com</a>
+</footer>
+    <!-- colocando sdk firebase -->
+    <script src="https://www.gstatic.com/firebasejs/7.9.1/firebase-app.js"></script>
+    <!-- agregando auth -->
+    <script src="https://www.gstatic.com/firebasejs/7.9.1/firebase-auth.js"></script>
+    <!-- agregando firestore -->
+    <script src="https://www.gstatic.com/firebasejs/7.9.1/firebase-firestore.js"></script>
+    <!-- js propio -->
+    <script src="./config/configFirebase.js"></script>
+    <script src="./Evaluaciones/Evaluaciones.js"></script>
+    <script src="index.js"></script>
+
+</body>
+
+</html>

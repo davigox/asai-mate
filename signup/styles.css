@@ -1,0 +1,123 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Muli', sans-serif;
+}
+.header {
+    display: flex;
+    align-items: center;
+    background-color: #24C6DC;
+    color: white;
+    height: 100px;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .header__img {
+    margin-left: 30px;
+    width: 40px;
+  }
+.signup{
+    background: #24C6DC;
+    background: -webkit-linear-gradient(#24C6DC, #514A9D);
+    background: linear-gradient(#24C6DC, #514A9D);
+    padding: 0;
+    min-height: calc(100vh - 200px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.signup__container{
+    width: 400px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.signup__container--img {
+    width: 100px;
+    height: 100px;
+    opacity: 0.9;
+    margin-bottom: 10px;
+}
+.signup__container--title{
+    color: white;
+    font-size: 20px;
+    letter-spacing: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.signup__container--title H1, .signup__container--title p{
+    margin: 0px;
+}
+.signup__container--form{
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+.signup__container--form input{
+    margin-bottom: 10px;
+}
+.input{
+    background: rgba(255, 255, 255, 0.15);
+    height: 40px;
+    width: 400px;
+    font-size: 20px;
+    color: white;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    text-align: center;
+}
+::placeholder{
+    color: rgba(255, 255, 255, 0.5);
+}
+.button{
+    background: #24C6DC;
+    height: 40px;
+    font-size: 20px;
+    color: white;
+    outline: none;
+    border: 2px solid #24C6DC;
+    border-radius: 12px;
+}
+.button:hover{
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+    .signup__container {
+      width: 100%;
+      border: none;
+      background-color: transparent;
+    }
+    .input, .button{
+        width: 98%;
+        height: 40px;
+    }
+    .signup__container--title{
+      font-size: 15px;
+    }
+}
+
+.footer{
+    background-color: #514A9D;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    box-sizing: border-box;
+    color: white;
+    width: 100%;
+    height: 100px;
+    padding-left: 30px;
+}
+.footer p, .footer a{
+    padding: 0;
+    margin: 0;
+    color: white;
+    text-decoration: none;
+}
